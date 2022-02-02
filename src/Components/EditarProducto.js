@@ -7,7 +7,7 @@ const EditarProducto = () => {
         <div className='card'>
             <div className='card-body'>
                 <h2 className='text-center mb-4 font-weight-bold'>
-                   EDITAR Producto
+                   EDITAR PRODUCTO
                 </h2>
 
                 <form>
