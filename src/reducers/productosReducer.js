@@ -18,7 +18,13 @@ export default function(state = initialState, action) {
         case AGREGAR_PRODUCTO:
             return {
                 ...state,
-                loading: true
+                loading: action.payload
+            }
+        case AGREGAR_PRODUCTO_EXITO:
+            return {
+                ...state,
+                loading: false,
+                productos: [...state.productos, action.payload]
             }
         default:
             return state;
